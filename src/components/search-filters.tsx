@@ -86,7 +86,7 @@ export function SearchFilters({ allLoads, setFilteredLoads }: SearchFiltersProps
                           onChange={(e) => setSearchTerm(e.target.value)}
                       />
                   </div>
-                  <Button onClick={handleGetSuggestions} disabled={isLoadingSuggestions} className="bg-accent hover:bg-accent/90 text-accent-foreground">
+                  <Button onClick={handleGetSuggestions} disabled={isLoadingSuggestions} className="bg-primary hover:bg-primary/90 text-primary-foreground">
                       <Zap className="mr-2 h-4 w-4" />
                       {isLoadingSuggestions ? '...' : 'AI Suggest'}
                   </Button>
@@ -107,17 +107,17 @@ export function SearchFilters({ allLoads, setFilteredLoads }: SearchFiltersProps
           <CollapsibleContent className="pt-4 space-y-4">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="space-y-2">
-                      <Label htmlFor="vehicleType">Vehicle Type</Label>
+                      <Label htmlFor="vehicleType">Car Type</Label>
                       <Select value={vehicleType} onValueChange={setVehicleType}>
                           <SelectTrigger id="vehicleType">
-                              <SelectValue placeholder="Select vehicle type" />
+                              <SelectValue placeholder="Select car type" />
                           </SelectTrigger>
                           <SelectContent>
-                              <SelectItem value="all">All Vehicle Types</SelectItem>
-                              <SelectItem value="Dry Van">Dry Van</SelectItem>
-                              <SelectItem value="Reefer">Reefer</SelectItem>
-                              <SelectItem value="Flatbed">Flatbed</SelectItem>
-                              <SelectItem value="Box Truck">Box Truck</SelectItem>
+                              <SelectItem value="all">All Car Types</SelectItem>
+                              <SelectItem value="Dry Van">Sedan</SelectItem>
+                              <SelectItem value="Reefer">SUV</SelectItem>
+                              <SelectItem value="Flatbed">Hatchback</SelectItem>
+                              <SelectItem value="Box Truck">Convertible</SelectItem>
                           </SelectContent>
                       </Select>
                   </div>

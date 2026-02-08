@@ -11,9 +11,9 @@ interface LoadListProps {
 
 export function LoadList({ loads, selectedLoadId, onSelectLoad }: LoadListProps) {
   return (
-    <Card className="h-full flex flex-col">
+    <Card className="h-full flex flex-col bg-transparent shadow-none border-none">
       <CardHeader>
-        <CardTitle>Available Loads ({loads.length})</CardTitle>
+        <CardTitle>Nearby Cars ({loads.length})</CardTitle>
       </CardHeader>
       <CardContent className="p-0 flex-1">
         <ScrollArea className="h-full">
@@ -29,7 +29,7 @@ export function LoadList({ loads, selectedLoadId, onSelectLoad }: LoadListProps)
               ))
             ) : (
               <div className="text-center py-10 text-muted-foreground">
-                <p>No loads match your criteria.</p>
+                <p>No cars match your criteria.</p>
               </div>
             )}
           </div>
