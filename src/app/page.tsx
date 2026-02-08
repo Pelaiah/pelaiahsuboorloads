@@ -4,7 +4,7 @@ import { loads } from '@/lib/data';
 
 export default function Home() {
   return (
-    <div className="flex flex-col h-screen bg-secondary/50">
+    <div className="flex flex-col min-h-screen bg-secondary/50 pb-16 md:pb-0">
       <Header />
        <div className="container py-4">
         <h1 className="text-2xl font-bold">Hi Bintang! 👋</h1>
