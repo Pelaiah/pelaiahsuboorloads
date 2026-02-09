@@ -29,17 +29,17 @@ export function Header() {
                 className="relative h-8 w-8 rounded-full"
               >
                 <Avatar className="h-8 w-8">
-                  <AvatarImage data-ai-hint="person face" src="https://picsum.photos/seed/user-rahul/100/100" alt="User" />
-                  <AvatarFallback>R</AvatarFallback>
+                  <AvatarImage data-ai-hint="person face" src="https://picsum.photos/seed/user-placeholder/100/100" alt="User" />
+                  <AvatarFallback>U</AvatarFallback>
                 </Avatar>
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent className="w-56" align="end" forceMount>
               <DropdownMenuLabel className="font-normal">
                 <div className="flex flex-col space-y-1">
-                  <p className="text-sm font-medium leading-none">Rahul</p>
+                  <p className="text-sm font-medium leading-none">User</p>
                   <p className="text-xs leading-none text-muted-foreground">
-                    rahul@example.com
+                    user@example.com
                   </p>
                 </div>
               </DropdownMenuLabel>

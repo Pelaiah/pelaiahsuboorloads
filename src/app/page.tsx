@@ -5,8 +5,8 @@ export default function Home() {
   return (
     <>
        <div className="container py-4">
-        <h1 className="text-2xl font-bold">Hi Bintang! 👋</h1>
-        <p className="text-muted-foreground">Ready to have a ride today?</p>
+        <h1 className="text-2xl font-bold">Welcome! 👋</h1>
+        <p className="text-muted-foreground">Ready to find a load today?</p>
       </div>
       <div className="flex-1 overflow-hidden">
         <LoadBoard initialLoads={loads} />

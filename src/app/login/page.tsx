@@ -8,7 +8,7 @@ export default function LoginPage() {
       <div className="bg-black/20 backdrop-blur-xl border border-white/10 rounded-2xl p-8 shadow-2xl">
         <Logo className="mb-8" />
         <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold text-white">Welcome Back, Rahul</h1>
+          <h1 className="text-3xl font-bold text-white">Welcome Back</h1>
         </div>
         <LoginForm />
       </div>
