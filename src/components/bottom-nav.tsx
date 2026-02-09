@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Home, BarChart2, Fuel, Layers, Settings } from 'lucide-react';
+import { Home, BarChart2, Search, Layers, Settings } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 export function BottomNav() {
@@ -14,14 +14,14 @@ export function BottomNav() {
         
         <div className="flex justify-around w-2/5">
             <Link
-              href="/"
+              href="/search"
               className={cn(
                 'flex flex-col items-center justify-center text-muted-foreground hover:text-primary transition-colors',
-                pathname === '/' && 'text-primary'
+                pathname.startsWith('/search') && 'text-primary'
               )}
-              aria-label="Home"
+              aria-label="Search"
             >
-              <Home className='h-7 w-7' fill={pathname === '/' ? 'currentColor' : 'none'} />
+              <Search className='h-7 w-7' />
             </Link>
             <Link
               href="/stats"
@@ -60,8 +60,8 @@ export function BottomNav() {
         
         {/* FAB */}
         <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/3">
-          <Link href="/search" className="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-lg hover:bg-primary/90 transition-colors" aria-label="Search">
-            <Fuel className="h-8 w-8" />
+          <Link href="/" className="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-lg hover:bg-primary/90 transition-colors" aria-label="Home">
+            <Home className="h-8 w-8" />
           </Link>
         </div>
 
