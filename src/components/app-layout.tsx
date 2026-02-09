@@ -25,7 +25,7 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
 
     if (isAuthPage) {
         return (
-            <div className="flex min-h-screen w-full items-center justify-center p-4 bg-background">
+            <div className="flex min-h-screen w-full items-center justify-center p-4">
                 {children}
             </div>
         );
