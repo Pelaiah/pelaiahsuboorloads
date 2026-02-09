@@ -19,7 +19,7 @@ export function FeatureHighlight() {
     return (
         <section id="features" className="py-20 md:py-32">
             <div className="container grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-16 items-center">
-                <div className="rounded-2xl overflow-hidden shadow-2xl">
+                <div className="rounded-2xl overflow-hidden shadow-2xl md:order-last">
                     <Image
                         src={featureImage.imageUrl}
                         alt={featureImage.description}
