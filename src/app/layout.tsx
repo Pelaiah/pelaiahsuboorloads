@@ -4,8 +4,8 @@ import { Toaster } from "@/components/ui/toaster";
 import { AppLayout } from '@/components/app-layout';
 
 export const metadata: Metadata = {
-  title: 'SHRUHH',
-  description: 'Welcome to SHRUHH',
+  title: 'Sulboor Load Board',
+  description: 'Welcome to Sulboor Load Board',
 };
 
 export default function RootLayout({

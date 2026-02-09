@@ -18,7 +18,7 @@ export function Header() {
         <div className="mr-4 flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
             <Logo className="h-8 w-8" />
-            <span className="font-bold sm:inline-block">SHRUHH</span>
+            <span className="font-bold sm:inline-block">Sulboor Load Board</span>
           </Link>
         </div>
         <div className="flex flex-1 items-center justify-end space-x-2">

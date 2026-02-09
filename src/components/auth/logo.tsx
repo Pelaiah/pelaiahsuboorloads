@@ -7,7 +7,7 @@ export function Logo({ className }: { className?: string }) {
                 <div className="absolute -top-1 left-3 h-10 w-5 rotate-[25deg] rounded-full bg-primary"></div>
                 <div className="absolute top-1 right-3 h-10 w-5 rotate-[25deg] rounded-full bg-primary"></div>
             </div>
-            <span className="text-3xl font-bold tracking-[0.2em] text-white">SHRUHH</span>
+            <span className="text-3xl font-bold tracking-widest text-white">SULBOOR</span>
         </div>
     )
 }
