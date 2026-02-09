@@ -9,7 +9,6 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
-import { Logo } from './auth/logo';
 
 export function Header() {
   return (
@@ -17,7 +16,10 @@ export function Header() {
       <div className="container flex h-14 max-w-screen-2xl items-center">
         <div className="mr-4 flex">
           <Link href="/search" className="mr-6 flex items-center space-x-2">
-            <Logo className="h-8 w-8" />
+            <div className="relative h-8 w-8">
+                <div className="absolute top-[3px] left-[9px] h-6 w-3 rotate-[25deg] rounded-full bg-primary"></div>
+                <div className="absolute top-[5px] right-[9px] h-6 w-3 rotate-[25deg] rounded-full bg-primary"></div>
+            </div>
           </Link>
         </div>
         <div className="flex flex-1 items-center justify-end space-x-2">
