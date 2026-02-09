@@ -60,7 +60,7 @@ export function BottomNav() {
         
         {/* FAB */}
         <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/3">
-          <Link href="/" className="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-lg hover:bg-primary/90 transition-colors" aria-label="Home">
+          <Link href="/search" className="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-lg hover:bg-primary/90 transition-colors" aria-label="Home">
             <Home className="h-8 w-8" />
           </Link>
         </div>
