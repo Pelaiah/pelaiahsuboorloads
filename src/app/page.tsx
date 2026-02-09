@@ -2,6 +2,12 @@ import { LandingHeader } from '@/components/landing-header';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
+import { HowItWorks } from '@/components/how-it-works';
+import { FeatureHighlight } from '@/components/feature-highlight';
+import { WhyChooseUs } from '@/components/why-choose-us';
+import { Testimonials } from '@/components/testimonials';
+import { Cta } from '@/components/cta';
+import { Footer } from '@/components/footer';
 
 export default function LandingPage() {
   return (
@@ -29,7 +35,15 @@ export default function LandingPage() {
             </Button>
           </div>
         </section>
+        
+        <HowItWorks />
+        <FeatureHighlight />
+        <WhyChooseUs />
+        <Testimonials />
+        <Cta />
+
       </main>
+      <Footer />
     </div>
   );
 }
