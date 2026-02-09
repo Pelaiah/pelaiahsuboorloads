@@ -6,7 +6,7 @@ export function MapProvider({ children }: { children: React.ReactNode }) {
 
   if (!apiKey) {
     return (
-      <div className="flex h-full w-full items-center justify-center bg-muted">
+      <div id="map" className="flex h-full w-full items-center justify-center bg-muted">
         <p className="text-muted-foreground">Google Maps API Key is missing.</p>
       </div>
     );
