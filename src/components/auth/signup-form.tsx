@@ -79,7 +79,7 @@ export function SignUpForm() {
             </FormItem>
           )}
         />
-        <Button type="submit" className="w-full text-lg h-12 rounded-lg mt-8">
+        <Button type="submit" className="w-full text-lg h-12 rounded-lg !mt-12">
           Sign Up
         </Button>
       </form>

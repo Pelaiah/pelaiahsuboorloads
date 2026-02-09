@@ -70,7 +70,7 @@ export function LoginForm() {
                 Forgot Password?
             </Link>
         </div>
-        <Button type="submit" className="w-full text-lg h-12 rounded-lg">
+        <Button type="submit" className="w-full text-lg h-12 rounded-lg !mt-12">
           Login
         </Button>
       </form>
